@@ -1,0 +1,416 @@
+body{
+    background-color: #EEEEEE;
+    margin: 0;
+}
+
+.p{
+    width: 200px;
+    height: 150px;
+    margin: 150px auto 10px;
+}
+.cloud{
+    font-size: 10em; 
+}
+.font1{
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button1 a{
+    background: #B0C4DE;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 260px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    text-decoration: none;
+}
+.button1 a:after {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.2s ease-in-out;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    transform: translateY(-50%);
+}
+.button1 a:hover {
+    background: black;
+    color: #FFF;
+}
+.button2{
+    width: 50%;
+    margin-top: 50px;
+}
+.button2 a{
+    background: #B0C4DE;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 260px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    text-decoration: none;
+}
+.button2 a:after {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.2s ease-in-out;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    transform: translateY(-50%);
+}
+.button2 a:hover {
+    background: black;
+    color: #FFF;
+}
+
+#box1{
+    display: flex;
+    width: 100%;
+}
+
+.funeral{
+    width: 95%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 12% 2.5% 0;
+}
+.funeralicon{
+    width: 200px;
+    border: 10px solid;
+    font-size: 9em;
+    border-radius: 110px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #000033;
+}
+.funeralicon:hover{
+    color: #313131;
+}
+.funeral1{
+    width: 95%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 26px 2.5%;
+}
+.p2{
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    color: #000033;
+}
+
+#login{
+    background-color: black;
+    opacity: .8;
+    width: 40%;
+    padding: 30px;
+    margin: 50px auto;
+    position: relative;
+}
+.login_p{
+    color: white;
+    font-weight: bold;
+}
+.loginform{
+    text-align: center;
+    margin: 50px;
+}
+.form{
+    width: 80%;
+    height: 50px;
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+    font-weight: bold;
+    color: white;
+    opacity: .3;
+    resize:none;
+}
+.login_button{
+    width: 80%;
+    height: 50px;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.change_pass{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #B0C4DE;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.change_pass a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000033;
+}
+
+.new_loginform{
+    text-align: center;
+}
+.new_form{
+    width: 80%;
+    height: 50px;
+    background-color: black;
+    opacity: .3;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.p_complete{
+    width: 200px;
+    margin: 0 auto 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.p_icon{
+    width: 200px;
+    margin: 20px auto 10px;
+    text-align: center;
+}
+.mark{
+    font-size: 5em; 
+}
+.mypage1{
+    width: 50%;
+    margin: 0 auto 229px;
+    background-color: black;
+    color: white;
+    opacity: .8;
+}
+.mypagebox1{
+    padding: 20px;
+}
+.mypagebox2{
+    display: flex;
+    width: 100%;
+}
+.mypage_p{
+    margin-left: 60%;
+}
+.edit1{
+    background: #B0C4DE;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+}
+.edit1 button{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    background: #B0C4DE;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.edit2{
+    background: #B0C4DE;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 50px;
+    text-align: center;
+    margin: 85px 5px;
+}
+.edit2 a{
+    color: black;
+}
+.delete{
+    margin: 20px 0 20px 650px;
+    border: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.titleicon{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #EEEEEE;
+}
+.menu_title{
+    font-weight: bold;
+    margin: 5px;
+    font-size: 20px;
+}
+#change_food{
+    background-color: black;
+    opacity: .8;
+    width: 40%;
+    padding: 30px;
+    margin: 41px auto;
+    position: relative;
+}
+
+.detail{
+    display: flex;
+}
+.detail_p{
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+.button3 a{
+    background: #B0C4DE;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 260px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    text-decoration: none;
+}
+.button3 a:after {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.2s ease-in-out;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    transform: translateY(-50%);
+}
+.button3 a:hover {
+    background: #EEEEEE;
+    color: black;
+}
+
+.form_body{
+    width: 80%;
+    height: 100px;
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+    font-weight: bold;
+    color: white;
+    opacity: .3;
+    resize:none;
+}
+
+.flower_order{
+    display: flex;
+}
+.flower_form{
+    width: 80%;
+    height: 50px;
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    color: white;
+    opacity: .3;
+    resize:none;
+    margin: 10px;
+}
+.order_p{
+    color: white;
+    font-weight: bold;
+}
+.flowerbox{
+    display: flex;
+}
+.img{
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 5px;
+    width: 70px;
+    padding: 40px 0;
+}
+.favorite{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.error{
+    color: white;
+}
+
+.admin{
+    height: 100px;
+}
+.button4 a{
+    background: #B0C4DE;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 260px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    text-decoration: none;
+}
+.button4 a:after {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.2s ease-in-out;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    transform: translateY(-50%);
+}
+.button4 a:hover {
+    background: black;
+    opacity: .8;
+    color: #EEEEEE;
+}
+
+#e_button{
+    color: white;
+}

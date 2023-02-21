@@ -1,0 +1,31 @@
+footer{
+    background-color: black;
+    opacity: .8;
+    height: 150px;
+    bottom: 0;
+    /* position: absolute; */
+    width: 100%;
+}
+
+#footer{
+    width: 150px;
+    text-align: center;
+    margin: auto;
+}
+.icon1{
+    color: white;
+    font-size: 5em;
+    margin: 10px;
+}
+.p1{
+    color: white;
+    margin: 0;
+    width: 150px;
+    height: 10px;
+}
+.form_1{
+    margin-left: 85%;
+}
+.form_1:hover{
+    color: #EEEEEE;
+}

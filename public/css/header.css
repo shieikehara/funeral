@@ -1,0 +1,44 @@
+header{
+    background-color: black;
+    opacity: .8;
+    margin: 0;
+    height: 80px;
+    position: relative;
+}
+
+a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#title{
+    display: flex;
+}
+.menu{
+    margin: 30px 50px;
+}
+.menu:hover{
+    color: #EEEEEE;
+}
+.box1{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    right: 0;
+}
+.mypage{
+    width: 50%;
+    text-align: right;
+    margin: 30px 50px;
+}
+.mypage:hover{
+    color: #EEEEEE;
+}
+.signout{
+    text-align: right;
+    margin: 30px 50px;
+}
+.signout:hover{
+    color: #EEEEEE;
+}
