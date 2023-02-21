@@ -15,3 +15,4 @@
     @endif
     <script src="https://kit.fontawesome.com/b3dcb0dac9.js" crossorigin="anonymous"></script>
 </body>
+$test;
