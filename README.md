@@ -31,4 +31,6 @@ xampp/MySQL/PHP
 ## データベース
 DB名：funeral
 
-phpMyAdminに上記のDBを作成して頂き、funeral.sqlをインポートして頂きお使いください。
+phpMyAdminに上記のDBを作成して頂き、funeral.sqlをインポートお願いします。
+また新規会員登録をして頂き、管理者ユーザーとして使っていただく際はお手数ですがMySQL上でusersテーブルのadminカラムを1にして頂きお使いください。
+新規会員登録時に葬家選択がありますが管理者ユーザーの場合は適当に選択して頂くか、登録後にMySQL上でusersテーブルのfuneral_idカラムを0に設定をお願いします。
