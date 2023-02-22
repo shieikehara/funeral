@@ -23,12 +23,9 @@ CREATE TABLE `funerals` (
     `updated_at` datetime
 );
 
-INSERT INTO `funerals` (`id`, `family_name`, `deceased`, `name`, `day1`, `day2`, `dinner`, `lunch`, `funeral_style`, `created_at`, `updated_at`) VALUES
-(1, '山田家', '山田太郎', '山田次郎', '2023-01-01', '202301-02', '10', '10', '2日間仏式', now(), now());
-
 CREATE TABLE `flowers` (
     `id` int(11) NOT NULL,
-    `name`varchar(50) NOT NULL,
+    `name` varchar(50) NOT NULL,
     `tel` varchar(11) NOT NULL,
     `nameplate` varchar(100) NOT NULL,
     `flower` varchar(50) NOT NULL,
