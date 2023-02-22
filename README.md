@@ -36,4 +36,5 @@ xampp/MySQL/PHP
 
 ## データベース
 DB名：funeral
+
 phpMyAdminに上記のDBを作成して頂き、funeral.sqlをインポートして頂きお使いください。
