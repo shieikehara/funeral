@@ -1,6 +1,3 @@
---Funeral Service
---phpMyAdminにDB　funeralを作成後インポート
-
 --ユーザー情報テーブル
 CREATE TABLE `users` (
     `id` int(11) NOT NULL,
