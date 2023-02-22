@@ -1,4 +1,4 @@
---ユーザー情報テーブル
+
 CREATE TABLE `users` (
     `id` int(11) NOT NULL,
     `name` varchar(50) NOT NULL,
@@ -9,8 +9,7 @@ CREATE TABLE `users` (
     `admin` int(11) NOT NULL DEFAULT 0   
 );
 
---葬儀詳細登録テーブル
-CREATE TABLE `funeral` (
+CREATE TABLE `funerals` (
     `id` int(11) NOT NULL,
     `family_name` varchar(50) NOT NULL,
     `deceased` varchar(50) NOT NULL,
@@ -24,13 +23,10 @@ CREATE TABLE `funeral` (
     `updated_at` datetime
 );
 
---葬儀詳細情報を登録
 INSERT INTO `funeral` (`id`, `family_name`, `deceased`, `name`, `day1`, `day2`, `dinner`, `lunch`, `funeral_style`, `created_at`, `updated_at`) VALUES
 (1, '山田家', '山田太郎', '山田次郎', '2023-01-01', '202301-02', '10', '10', '2日間仏式', now(), now());
 
-
---生花注文情報テーブル
-CREATE TABLE `flower` (
+CREATE TABLE `flowers` (
     `id` int(11) NOT NULL,
     `name`varchar(50) NOT NULL,
     `tel` varchar(11) NOT NULL,
@@ -41,7 +37,6 @@ CREATE TABLE `flower` (
     `created_at` datetime
 );
 
---ユーザーが生花の注文した際のテーブル
 CREATE TABLE `u_flowers` (
     `id` int(11) NOT NULL,
     `user_id` int(11) NOT NULL,
@@ -49,7 +44,6 @@ CREATE TABLE `u_flowers` (
     `created_at` datetime
 );
 
---問い合わせ情報テーブル
 CREATE TABLE `forms` (
     `id` int(11) NOT NULL,
     `name` varchar(50) NOT NULL,
@@ -60,3 +54,12 @@ CREATE TABLE `forms` (
     `updated_at` datetime
 );
 
+ALTER TABLE `users` ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `funerals` ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `flowers` ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `u_flowers` ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `forms` ADD PRIMARY KEY (`id`);
