@@ -1,6 +1,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 @include('funeral.header')
+@dd($forms)
 <body>
     <div id='change_food'>
         <div class='titleicon'>
@@ -30,9 +31,7 @@
         @endif
     </div>
     @if(!isset($user) || $user->admin == 0)
-    @dd($forms)
     @endif
-
     <script src="https://kit.fontawesome.com/b3dcb0dac9.js" crossorigin="anonymous"></script>
 </body>
 @include('funeral.footer')
