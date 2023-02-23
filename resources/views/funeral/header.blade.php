@@ -7,7 +7,7 @@
     <div id='title'>
         <a href="{{ route('menu') }}" class='menu'><i class="fa-solid fa-cloud"></i>Funeral Service</a>
         <div class='box1'>
-            <a href="{{ route('mypage') }}?id={{ $id }}" class="mypage">ユーザーネーム</a>
+            <a href="{{ route('mypage') }}?id={{ $id }}" class="mypage">マイページ</a>
             <a href="{{ route('logout') }}" class="signout" onclick="return confirm('サインアウトしますか？')">サインアウト</a>
         </div>
     </div>
