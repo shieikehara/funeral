@@ -209,7 +209,8 @@ class FuneralController extends Controller
         try {
             $user = Auth::user();
             $id = Auth::id();
-            return view('funeral.form', compact('user', 'id'));
+            $forms = Form::all();
+            return view('funeral.form', compact('user', 'id', 'forms'));
         } catch (\Throwable $th){
             return 'アクセスできません。';
         }

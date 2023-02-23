@@ -6,6 +6,7 @@
         <div class='titleicon'>
             <i class="fa-regular fa-envelope fa-2x"></i><p class='menu_title'>お問い合わせ</p>
         </div>
+        @if(isset($user))
         <form action="complete/form" method="post" class="loginform">
             @csrf
             <input type="text" name="name" placeholder="name" class="form"><br>
@@ -26,7 +27,11 @@
             @endif
             <input type="submit" name="send" value="送信" class="login_button">
         </form>
+        @endif
     </div>
+    @if(!isset($user) || $user->admin == 0)
+    @dd($forms)
+    @endif
 
     <script src="https://kit.fontawesome.com/b3dcb0dac9.js" crossorigin="anonymous"></script>
 </body>
