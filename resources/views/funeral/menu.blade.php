@@ -7,8 +7,11 @@
             <a href="{{ route('funeral') }}?id={{ $user->funeral_id }}"><i class="fa-solid fa-pen-nib funeralicon"></i></a>
             <a href="{{ route('change_food') }}?id={{ $user->funeral_id }}"><i class="fa-solid fa-utensils funeralicon"></i></a>
             <a href="{{ route('flower') }}?id={{ $id }}"><i class="fa-solid fa-leaf funeralicon"></i></a>
-            <a href="{{ route('form') }}"><i class="fa-regular fa-envelope funeralicon"></i></a>
+            @if($user->admin == 0)
+                <a href="{{ route('form') }}"><i class="fa-regular fa-envelope funeralicon"></i></a>
+            @endif
             @if($user->admin == 1)
+                <a href="{{ route('form') }}"><i class="fa-regular fa-envelope funeralicon"></i></a>
                 <a href="{{ route('new_funeral') }}"><i class="fa-solid fa-desktop funeralicon"></i></a>
             @endif
         </div>
@@ -16,8 +19,11 @@
             <p class='p2'>葬儀詳細</p>
             <p class='p2'>料理数変更</p>
             <p class='p2'>生花・供物注文</p>
-            <p class='p2'>お問い合わせ</p>
+            @if($user->admin == 0)
+                <p class='p2'>お問い合わせ</p>
+            @endif
             @if($user->admin == 1)
+                <p class='p2'>お問い合わせ詳細</p>
                 <p class='p2'>葬儀詳細登録</p>
             @endif
         </div>

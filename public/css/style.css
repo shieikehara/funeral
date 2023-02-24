@@ -414,3 +414,7 @@ body{
 #e_button{
     color: white;
 }
+
+nav.flex.items-center.justify-between{
+    text-align: center;
+}

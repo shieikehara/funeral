@@ -205,12 +205,13 @@ class FuneralController extends Controller
         }
     }
 
-    public function form() {
+    public function form(Request $request) {
         try {
             $user = Auth::user();
             $id = Auth::id();
-            $forms = Form::all();
-            return view('funeral.form', compact('user', 'id', 'forms'));
+            $sort = $request->sort;
+            $forms = Form::orderBy('id', 'desc')->paginate(5);
+            return view('funeral.form', compact('user', 'id', 'forms', 'sort'));
         } catch (\Throwable $th){
             return 'アクセスできません。';
         }
