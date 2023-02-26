@@ -63,6 +63,7 @@
                 <div class='titleicon'>
                     <i class="fa-regular fa-envelope fa-2x"></i><p class='menu_title'>お問い合わせ</p>
                 </div>
+                <button id="comp">●</button>
                 <div class='detail'>
                     <p class='detail_p'>名前</p>
                     <p class='detail_p'>{{ $form->name }}</p>

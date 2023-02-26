@@ -51,3 +51,4 @@ Route::prefix('change_complete')->group(function(){
     Route::post('/user', [FuneralController::class, 'change_complete2'])->name('user');
 });
 
+// Route::get('/chat', [FuneralController::class, 'chat']);
