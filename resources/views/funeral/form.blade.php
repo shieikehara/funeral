@@ -63,7 +63,6 @@
                 <div class='titleicon'>
                     <i class="fa-regular fa-envelope fa-2x"></i><p class='menu_title'>お問い合わせ</p>
                 </div>
-                <button id="comp">●</button>
                 <div class='detail'>
                     <p class='detail_p'>名前</p>
                     <p class='detail_p'>{{ $form->name }}</p>
@@ -85,6 +84,13 @@
                     <p class='detail_p'>{{ $form->created_at }}</p>
                 </div>
             </div>
+            <div>
+                <form method="post" action="" id="formList">
+                    @csrf
+                    <input type="hidden" class="id" name="id" value="{{ $form->id }}">
+                </form>
+                <button class="comp" onclick='comp();'>未</button>
+            </div>
         @endforeach
         <div class="page">
             {{ $forms->links() }}
@@ -96,5 +102,6 @@
         </div>
     @endif
     <script src="https://kit.fontawesome.com/b3dcb0dac9.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('/js/chat.js') }}"></script>
 </body>
 @include('funeral.footer')

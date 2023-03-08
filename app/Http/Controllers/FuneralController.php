@@ -238,8 +238,4 @@ class FuneralController extends Controller
             return 'アクセスできません。';
         }
     }
-
-    public function chat() {
-        return view('funeral.chat');
-    }
 }

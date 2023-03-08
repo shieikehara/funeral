@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MypageController;
 use App\Http\Controllers\FuneralController;
+use App\Http\Controllers\CompleteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('mypage', [MypageController::class, 'edit_user']);
-Route::get('/chat', [FuneralController::class, 'chat']);
+Route::post('menu/form', [CompleteController::class, 'form_comp'])->name("form_comp");
 
