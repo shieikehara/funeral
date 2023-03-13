@@ -18,3 +18,4 @@ class Complete extends Model
         'created_at'
     ];
 }
+?>

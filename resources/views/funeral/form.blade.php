@@ -63,6 +63,14 @@
                 <div class='titleicon'>
                     <i class="fa-regular fa-envelope fa-2x"></i><p class='menu_title'>お問い合わせ</p>
                 </div>
+                <div id='btn'>
+                    <form method="post" action="" id="formList">
+                        @csrf
+                        <input type="hidden" class="id" name="id" value="{{ $form->id }}">
+                        <input type="hidden" class="id" name="comp_id" value="{{ $user->id }}">
+                    </form>
+                    <button class="comp">未</button>
+                </div>
                 <div class='detail'>
                     <p class='detail_p'>名前</p>
                     <p class='detail_p'>{{ $form->name }}</p>
@@ -83,13 +91,6 @@
                     <p class='detail_p'>お問い合わせ日時</p>
                     <p class='detail_p'>{{ $form->created_at }}</p>
                 </div>
-            </div>
-            <div>
-                <form method="post" action="" id="formList">
-                    @csrf
-                    <input type="hidden" class="id" name="id" value="{{ $form->id }}">
-                </form>
-                <button class="comp" onclick='comp();'>未</button>
             </div>
         @endforeach
         <div class="page">

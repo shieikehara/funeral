@@ -239,3 +239,4 @@ class FuneralController extends Controller
         }
     }
 }
+?>

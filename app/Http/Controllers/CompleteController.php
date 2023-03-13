@@ -23,3 +23,4 @@ class CompleteController extends Controller
         }
     }
 }
+?>
