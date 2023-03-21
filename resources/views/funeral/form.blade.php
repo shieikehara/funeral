@@ -66,8 +66,8 @@
                 <div id='btn'>
                     <form method="post" action="" id="formList">
                         @csrf
-                        <input type="hidden" class="id" name="id" value="{{ $form->id }}">
-                        <input type="hidden" class="id" name="comp_id" value="{{ $user->id }}">
+                        <input type="hidden" class="id" name="user_id" value="{{ $form->id }}">
+                        <input type="hidden" class="id" name="comp_user" value="{{ $user->id }}">
                     </form>
                     <button class="comp">未</button>
                 </div>
