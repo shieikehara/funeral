@@ -11,21 +11,24 @@ use App\Models\Complete;
 class CompleteController extends Controller
 {
     public function form_comp(Request $request) {
+        $params = $request->all();
         try {
-            $comps = Complete::insert([
-                'user_id' => 1,
-                'comp_user' => 1,
-                'created_at' => now()
-            ]);
-
-            // $id = $comps->id;
-            // if (isset($id)) {
-                // Complete::destroy($id);
-            // }
-            return response()->json(['test'=>$_POST]);
+            if ($params['comp_num'] == 1) {
+                Complete::create([
+                    'form_id' => $_GET['form_id'],
+                    'user_id' => $_GET['user_id'],
+                    'created_at' => now()
+                ]);    
+            }else if ($params['comp_num'] == 0){
+                $id = $params['form_id'];
+                Complete::where('form_id', $id)->delete();                
+            }
+            return response()->json(['test'=>$_GET]);
+            return compact('params');
         } catch (\Throwable $th) {
             return 'アクセスできません。';
         }
     }
+
 }
 ?>

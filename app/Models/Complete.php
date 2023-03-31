@@ -11,8 +11,8 @@ class Complete extends Model
 
     const UPDATED_AT = NULL;
     public $fillable = [
-        'user_id',
-        'comp_user'
+        'form_id',
+        'user_id'
     ];
     protected $dates = [
         'created_at'

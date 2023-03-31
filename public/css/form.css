@@ -119,3 +119,8 @@ div.hidden.sm\:flex-1.sm\:items-center.sm\:justify-between{
     font-size: 20px;
     font-weight: bold;
 }
+.del{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}

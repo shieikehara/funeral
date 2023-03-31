@@ -21,5 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('mypage', [MypageController::class, 'edit_user']);
-Route::post('menu/form', [CompleteController::class, 'form_comp']);
+Route::get('menu/form', [CompleteController::class, 'form_comp'])->name('api');
+// Route::post('menu/form', [CompleteController::class, 'form_del']);
 

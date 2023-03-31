@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Complete;
 use App\Models\Flower;
 use App\Models\Form;
 use App\Models\Funeral;
@@ -211,7 +212,10 @@ class FuneralController extends Controller
             $id = Auth::id();
             $sort = $request->sort;
             $forms = Form::orderBy('id', 'desc')->paginate(5);
-            return view('funeral.form', compact('user', 'id', 'forms', 'sort'));
+            $completes = Complete::all();
+            // dd($completes);
+            
+            return view('funeral.form', compact('user', 'id', 'forms', 'sort', 'completes'));
         } catch (\Throwable $th){
             return 'アクセスできません。';
         }

@@ -59,17 +59,31 @@
     @endif
     @if(isset($user) && $user->admin == 1)
         @foreach($forms as $form)
+        
             <div id='change_food'>
                 <div class='titleicon'>
                     <i class="fa-regular fa-envelope fa-2x"></i><p class='menu_title'>お問い合わせ</p>
                 </div>
                 <div id='btn'>
-                    <form method="post" action="" id="formList">
+                    <form method="get" action="{{ route('api') }}" id="formList">
                         @csrf
-                        <input type="hidden" class="id" name="user_id" value="{{ $form->id }}">
-                        <input type="hidden" class="id" name="comp_user" value="{{ $user->id }}">
+                        <input type="hidden" class="id" id="form_id" name="form_id" value="{{ $form->id }}">
+                        <input type="hidden" class="id" id="user_id" name="user_id" value="{{ $user->id }}" >
                     </form>
-                    <button class="comp">未</button>
+                    @foreach($completes as $complete)
+                    @if($complete->form_id == $form->id)
+                    <!-- <button name="add" class="comp" comp_num="0">未</button> -->
+                    
+                    <button name="add" class="comp" comp_num="1">済</button> 
+                    
+                    <!-- <button name="add" class="comp" comp_num="0">未</button> -->
+                    
+                    @endif
+                    
+                    <!-- <button name="add" class="comp" comp_num="0">未</button> -->
+                    
+                    @endforeach 
+                    
                 </div>
                 <div class='detail'>
                     <p class='detail_p'>名前</p>
@@ -92,6 +106,7 @@
                     <p class='detail_p'>{{ $form->created_at }}</p>
                 </div>
             </div>
+            
         @endforeach
         <div class="page">
             {{ $forms->links() }}
@@ -103,6 +118,7 @@
         </div>
     @endif
     <script src="https://kit.fontawesome.com/b3dcb0dac9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{ asset('/js/chat.js') }}"></script>
 </body>
 @include('funeral.footer')
